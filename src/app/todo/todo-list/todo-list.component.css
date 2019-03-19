@@ -1,0 +1,147 @@
+.block{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.list-groups{
+    min-height: 300px;
+    margin-bottom: 3%;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+}
+.btn{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    width: 25%;
+    background-color: #026aa7;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 5%;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #026ba7be;
+    transition: 0.5s;
+}
+@media screen and
+(max-width: 650px){
+    .btn{
+        width: 45%;
+    }
+}
+
+.float{
+    font-size: 3em;
+    width: 10%;
+    height: 100%;
+    border: none;
+    color: whitesmoke;
+    border-radius:0 10px 10px 0px;
+    background-color: #026ba7;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.float:hover{
+    background-color: #026ba7c2;
+    transition: 0.5s;
+}
+.width{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.test{
+    flex-direction: row;
+}
+.flex{
+    height: 60px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin-bottom: 5%;
+    background: #fff;
+    -webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    border-radius: 10px 10px 10px 10px;
+}
+.H3{
+    font-size: 1.5em;
+    color: darkslategray;
+    font-family: 'Oswald', sans-serif;
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.H2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    margin: 5%;
+    font-weight: bolder;
+}
+.destroy{
+    font-family: 'Oswald', sans-serif;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    padding: 0;
+    margin-bottom: 5%;
+    background: rgba(255, 28, 28, 0.76);
+}
+
+.btn{
+    width: 400px;
+    margin-bottom: 1.2em;
+    margin: 2%;
+    height: 40px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+.btn:hover{
+    color: whitesmoke;
+    background-color: #3f93c4;
+}
+.button{
+    border: none;
+    color: whitesmoke;
+    background-color: #026aa7;
+    cursor: pointer;
+}
+.button:hover{
+    color: whitesmoke;
+    background-color: #3a96cc;
+}
+@media screen and
+(max-width: 650px){
+    .float{
+        width: 60px;
+    }
+    .btn{
+        width: 100%;
+    }
+    .destroy{
+        font-size: 1.8em;
+    }
+}

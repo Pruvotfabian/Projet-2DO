@@ -1,0 +1,113 @@
+.back{
+    background-image: url(../../assets/image/DariuszSankowski.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; 
+    background-size: cover; 
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blue{
+    height: 300px;
+    background-color: #026aa7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.height{
+    height:600px;
+}
+.color{
+    font-family: 'Oswald', sans-serif;
+    background-color: #026aa7;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.p{
+    margin-bottom: 5%;
+    font-size: 1.4em;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.titre{
+    margin-bottom: 2%;
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.tittle{
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 6em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.color2{
+    
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 200px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 100px;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+}
+
+.p2{
+    font-size: 1.4em;
+    width: 65%;
+    color: #026aa7;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.titre2{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: #026aa7;
+    font-weight: bold;
+}
+.taille{
+    width: 100%;
+}
+@media screen and
+(max-width: 720px){
+    .color2{
+        width: 100%;
+    }
+    .tittle{
+        font-size: 4em;
+    }
+    .p{
+        width: 85%;
+    }
+    .p2{
+        width: 85%;
+    }
+    .color2{
+        border-radius: 0;
+    }
+}

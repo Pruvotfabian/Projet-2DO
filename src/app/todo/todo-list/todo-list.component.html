@@ -1,0 +1,15 @@
+<div class="block">
+    <div class="width">
+      <h2 class="H2">Vos To Do</h2>
+        <div class="list-groups" >
+          <div  class="flex" *ngFor="let ToDo of toDo; let i = index">
+            <h3 class="H3">{{ ToDo.title }}</h3>
+              <button class="float" (click)="onDeleteToDo(ToDo)" >
+             -
+              </button>
+          </div>
+          <div class="destroy" *ngIf="toDodestroy"> Tâche supprimmé ! </div>
+        </div>
+          <button class="btn button" (click)="onNewToDo()">Nouvelle Tâche</button>
+    </div>
+  </div>

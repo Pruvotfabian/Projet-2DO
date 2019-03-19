@@ -1,0 +1,49 @@
+.footer{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    background-color: #026aa7;
+}
+.flex{
+
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 1em;
+}
+.flex2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+}
+.but{
+    border: 0;
+    height: 60%;
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.but:hover{
+    background-color: rgba(255, 255, 255, 0.65);
+    transition: 0.2s;
+    color: #026aa7;
+
+}
+@media screen and
+(max-width: 414px){
+    .but{
+    width: 33%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    }
+}

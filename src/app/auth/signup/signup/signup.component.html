@@ -1,0 +1,39 @@
+
+<div class="back">
+  <div class="row">
+
+    <div class="width">
+      <h3>Créez un compte</h3>
+
+      <div class="formGroup">
+        <input type="email" class="formControl" placeholder="Email" #userEmail required>
+      </div>
+
+      <div class="formGroup">
+        <input type="password" class="formControl" placeholder="Mot de Passe" #userPwd required>
+      </div>
+
+      <div class="formGroup">
+        <input type="button" class="btn button" value="Connexion" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+      </div>
+
+      <div class="formGroup">
+        <span class="or"><span class="orInner">Ou</span></span>
+      </div>
+
+      <!-- Continue with Google -->
+      <div class="formGroup">
+        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+          <i class="fab fa-google-plus-g"></i>
+          Connexion avec google
+        </button>
+      </div>
+
+    </div>
+
+    <div class="redirectToLogin">
+      <span>Vous avez déjà un compte ? <span class="redirect" routerLink="/sign-in">Connexion</span></span>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="back">
+    <div class="row">
+      <div class="flex">
+        <h2>Enregistrer Toutes vos Nouvelles Tâches</h2>
+        <form class="width" [formGroup]="toDoForm" (ngSubmit)="onSaveToDo()">
+          <div class="form-group">
+            <input type="text" id="title"
+                   class="formControl" placeholder="Votre Tâche" formControlName="title">
+          </div>
+        
+       
+          <button class="btn button" [disabled]="toDoForm.invalid"
+                  type="submit">Enregistrer
+          </button>
+        </form>
+      </div>
+    </div>
+    </div>

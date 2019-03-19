@@ -1,0 +1,39 @@
+
+<div class="body">
+  <div class="Logo" *ngIf="!isAuth" >
+    <img src="../../assets/image/2DO.png" alt="Logo 2DO"> 
+  </div>
+  <div class="Logo2" *ngIf="isAuth">
+      <img src="../../assets/image/2DO.png" alt="Logo 2DO"> 
+    </div>
+    <div class="toggle" >
+        <span></span>
+        <span></span>
+      </div>
+</div>
+
+
+<div class="block">
+    <ul class="navigation-nav" >
+       
+         <li class="new navigations" routerLinkActive="active" *ngIf="!isAuth">
+              <a class="headnew" href="sign-up">Créer un compte</a>
+        </li>
+        <li  class="Connexion navigations" routerLinkActive="active" *ngIf="!isAuth">
+              <a class="headnew" href="sign-in">Connexion</a>
+        </li>
+        <li class="navigation" routerLinkActive="active" *ngIf="isAuth">
+          <a class="head" routerLink="accueil">Accueil</a>
+        </li>
+          <li class="navigation" routerLinkActive="active" *ngIf="isAuth">
+              <a  class="head" routerLink="/new-todo">Créer une nouvelle tâche</a>
+            </li>
+          
+            <li class="deco">
+                <a class="navigation Déconnexion"
+                   (click)="onSignOut()"
+                   style="cursor:pointer"
+                   *ngIf="isAuth">Déconnexion</a>
+            </li>
+      </ul>
+</div>

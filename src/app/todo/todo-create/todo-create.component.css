@@ -1,0 +1,105 @@
+.row{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    border-radius: 10px 10px 10px 10px ;
+    background-color: rgba(245, 245, 245, 0.904);
+}
+
+.back{
+    height: 550px;
+    background-image: url(../../../assets/image/DariuszSankowski.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; 
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn{
+    background-color: #026aa7;
+}
+.btn:hover{
+    background-color: #3f93c4;
+}
+.btn-success{
+    background-color: #026aa7;
+}
+.btn-success:hover{
+    background-color: #3a96cc;
+}
+.btn{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 1.2em;
+    height: 40px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+.btn:hover{
+    color: whitesmoke;
+    background-color: #3f93c4;
+}
+.button{
+    border: none;
+    color: whitesmoke;
+    background-color: #026aa7;
+    cursor: pointer;
+}
+.button:hover{
+    color: whitesmoke;
+    background-color: #3a96cc;
+}
+.formControl{
+    background: #EDEFF0;
+    border-radius: 4px;
+    font-size: 1.5em;
+    border: 1px solid #CDD2D4;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 40px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    font-size: 2em;
+    width: 80%;
+    text-align: center;
+
+}
+.width{
+    width: 75%;
+}
+@media screen and
+(max-width: 700px){
+    .row{
+        width: 85%;
+        height: 250px;
+        padding: 2%;
+    }
+    h2{
+        width: 100%;
+        font-size: 1.5em;
+    }
+}
