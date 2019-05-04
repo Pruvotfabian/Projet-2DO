@@ -1,0 +1,28 @@
+.position-titre{
+    padding: 5%;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    color: #fff;
+}
+.backcolor{
+    position: relative;
+    width: 100%;
+    background-color: #026aa7;
+}
+.mention{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    padding: 5%;
+}
+.titre{
+    margin-top:5%;
+    margin-bottom: 5%;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.texte{
+    font-size: 1.3em;
+}

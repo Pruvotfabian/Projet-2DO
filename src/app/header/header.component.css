@@ -8,11 +8,11 @@
 a{
     text-decoration: none;
     padding: 15px;
-    color: black;
     font-weight: bold;
     font-size: 1.2em;
 }
 .head{
+    color: #fff;
     height: auto;
     margin: 5px;
     display: flex;
@@ -20,9 +20,13 @@ a{
 }
 
 .headnew{
+    width: 100%;
     color: whitesmoke;
 }
-
+.headnew:hover{
+    color: #222426;
+    transition: 0.5s;
+}
 .navigation a:hover{
     color: whitesmoke;
     background:  #026aa7;
@@ -57,14 +61,13 @@ a{
     margin: 10px;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    background: #5AAC44;
+  
     border: 2px solid transparent;
     border-radius: 25px 25px 25px 25px;
     transition: 0.5s;
 }
 .Connexion:hover{
-    background: rgb(106, 179, 86);
+    background: #fff;
     transition: 0.5s;
 
 }
@@ -74,27 +77,38 @@ a{
     margin: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    align-items: center;
-    background: rgb(102, 102, 241);
+    align-items: center;;
     border: 2px solid transparent;
     border-radius: 25px 25px 25px 25px;
     transition: 0.5s;
 } 
 .new:hover{
-    background: rgb(129, 129, 233);
+    background: #fff;
     transition: 0.5s;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.sepa{
+    border: 2px solid #fff;
+    width: 75%;
 }
 .block{
     z-index: 5;
     height: 100%;
     width: 30%;
     position: fixed;
-    background:  whitesmoke;
+    background: #222426;
     left: -500px;
     top: 0;
     transition:0.6s;
 }
+.titre{
+    color: #fff;
+    margin: 10%;
+}
+
 
 .block.active{
     position: fixed;

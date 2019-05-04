@@ -1,7 +1,17 @@
 .footer{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    background-color: #026aa7;
+    background-color: #222426;
+}
+.mention{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cursor{
+    cursor: pointer;
 }
 .flex{
 

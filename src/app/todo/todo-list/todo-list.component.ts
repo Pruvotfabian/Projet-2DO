@@ -16,6 +16,7 @@ export class TodoListComponent implements OnInit, OnDestroy {
   toDo: ToDo[];
   toDoSubscription: Subscription;
   toDodestroy: boolean;
+
   constructor(private todoService: TodoService, private authService: AuthService, private router: Router) {
    
   }

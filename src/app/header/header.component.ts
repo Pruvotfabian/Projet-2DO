@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../service/auth.service';
-import * as firebase from 'firebase';
+import { AngularFireAuth } from "@angular/fire/auth";
 import * as $ from 'jquery'
 
 @Component({
@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   isAuth: boolean;
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, public af: AngularFireAuth) { }
 
   ngOnInit() {
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
 });
 
 
-    firebase.auth().onAuthStateChanged(
+    this.af.auth.onAuthStateChanged(
       (user) => {
         if(user) {
           this.isAuth = true;

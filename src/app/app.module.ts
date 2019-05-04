@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFireDatabaseModule } from 'angularfire2/database'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -26,6 +27,8 @@ import { UserComponent } from './user/user.component';
 import { AuthService } from './service/auth.service';
 import { TodoService } from './service/todo.service';
 import { AuthGuardianService } from './service/auth-guardian.service';
+import { MentionComponent } from './mention/mention.component';
+import { AproposComponent } from './apropos/apropos.component';
 
 
 
@@ -44,6 +47,8 @@ import { AuthGuardianService } from './service/auth-guardian.service';
     EmailVerifyComponent,
     Erreur404Component,
     UserComponent,
+    MentionComponent,
+    AproposComponent,
 
   ],
   imports: [
@@ -55,6 +60,7 @@ import { AuthGuardianService } from './service/auth-guardian.service';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    AngularFireDatabaseModule
   ],
   providers: [
     AuthService,

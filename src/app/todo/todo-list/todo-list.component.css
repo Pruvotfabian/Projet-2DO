@@ -36,9 +36,13 @@ h2{
         width: 45%;
     }
 }
-
+.img{
+    width: 50%;
+}
 .float{
-    font-size: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 10%;
     height: 100%;
     border: none;
@@ -61,7 +65,6 @@ h2{
     flex-direction: row;
 }
 .flex{
-    height: 60px;
     border-radius: 10px;
     width: 100%;
     display: flex;
@@ -79,7 +82,7 @@ h2{
     font-size: 1.5em;
     color: darkslategray;
     font-family: 'Oswald', sans-serif;
-    width: 88%;
+    width: 80%;
     margin-left: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -135,6 +138,12 @@ h2{
 }
 @media screen and
 (max-width: 650px){
+    .H3{
+        width: 60%;
+    }
+    .flex{
+        min-height: 150px;
+    }
     .float{
         width: 60px;
     }

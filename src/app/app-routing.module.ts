@@ -11,6 +11,8 @@ import { Erreur404Component } from './erreur404/erreur404.component';
 import { UserComponent } from './user/user.component';
 
 import { AuthGuardianService } from "./service/auth-guardian.service";
+import { MentionComponent } from './mention/mention.component';
+import { AproposComponent } from './apropos/apropos.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +22,8 @@ const routes: Routes = [
   { path: 'accueil', component: AccueilComponent, canActivate: [AuthGuardianService] },
   { path: 'new-todo', component: TodoCreateComponent, canActivate: [AuthGuardianService] },
   { path: 'sign-in', component: SigninComponent},
+  { path: 'mention', component: MentionComponent},
+  { path: 'Apropos', component: AproposComponent},
   { path: 'user', component: UserComponent, canActivate: [AuthGuardianService]},
   { path: 'sign-up', component: SignupComponent},
   { path: '**', component: Erreur404Component},

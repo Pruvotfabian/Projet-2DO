@@ -15,18 +15,21 @@
 
 <div class="block">
     <ul class="navigation-nav" >
-       
+       <h1 class="titre flex">MENU</h1>
+       <div class="flex">
+         <div class="sepa"></div>
+        </div>
          <li class="new navigations" routerLinkActive="active" *ngIf="!isAuth">
               <a class="headnew" href="sign-up">Créer un compte</a>
         </li>
-        <li  class="Connexion navigations" routerLinkActive="active" *ngIf="!isAuth">
+        <li  class="new navigations" routerLinkActive="active" *ngIf="!isAuth">
               <a class="headnew" href="sign-in">Connexion</a>
         </li>
-        <li class="navigation" routerLinkActive="active" *ngIf="isAuth">
-          <a class="head" routerLink="accueil">Accueil</a>
+        <li class="new navigations" routerLinkActive="active" *ngIf="isAuth">
+          <a class="headnew" routerLink="accueil">Accueil</a>
         </li>
-          <li class="navigation" routerLinkActive="active" *ngIf="isAuth">
-              <a  class="head" routerLink="/new-todo">Créer une nouvelle tâche</a>
+          <li class="new navigations" routerLinkActive="active" *ngIf="isAuth">
+              <a  class="headnew" routerLink="/new-todo">Nouvelle tâche</a>
             </li>
           
             <li class="deco">

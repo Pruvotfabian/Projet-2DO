@@ -1,7 +1,7 @@
 import { Injectable, NgZone } from '@angular/core';
 import { User } from "../model/user";
 import { auth } from 'firebase/app';
-import * as firebase from 'firebase/app';
+import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Router } from "@angular/router";
@@ -14,12 +14,13 @@ import { Router } from "@angular/router";
 })  
 export class AuthService {
   userData: any;
-  
+  connect : boolean = false;
   constructor(
     public afs: AngularFirestore,   
     public afAuth: AngularFireAuth, 
     public router: Router,  
-    public ngZone: NgZone 
+    public ngZone: NgZone,
+    public ad: AngularFireDatabase,
   ) { 
     this.afAuth.authState.subscribe(user => {
       if (user) {
@@ -48,7 +49,7 @@ export class AuthService {
     return this.afAuth.auth.createUserWithEmailAndPassword(email, password)
       .then((result) => {
         this.SendVerificationMail();
-        firebase.database().ref(`${this.userData.uid}`);
+        this.ad.database.ref(`${this.userData.uid}`);
         this.SetUserData(result.user);
       }).catch((error) => {
         window.alert(error.message)
@@ -69,6 +70,7 @@ export class AuthService {
     })
   }
   get isLoggedIn(): boolean {
+    this.connect = true;
     const user = JSON.parse(localStorage.getItem('user'));
     return (user !== null && user.emailVerified !== false) ? true : false;
   }
@@ -89,7 +91,6 @@ export class AuthService {
   SetUserData(user) {
     const userRef: AngularFirestoreDocument<any> = this.afs.doc(`user/${user.uid}`);
     const userData: User = {
-      
       uid: user.uid,
       email: user.email,
       emailVerified: user.emailVerified

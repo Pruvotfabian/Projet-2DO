@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  router: any;
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  mention(){
+    this.router.navigate(['../mention'])
+  }
 }
