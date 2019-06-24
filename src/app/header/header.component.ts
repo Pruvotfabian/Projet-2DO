@@ -29,7 +29,12 @@ $(document).ready(function(){
     $('.toggle').removeClass('active');
     $('.block').removeClass('active');
   });
+  $('.headnew').click(function(){
+    $('.toggle').removeClass('active');
+    $('.block').removeClass('active');
   });
+  });
+
  
 });
 
@@ -47,8 +52,7 @@ $(document).ready(function(){
 
   onSignOut() {
     this.authService.SignOut();
-
   }
-;
+
 
 }

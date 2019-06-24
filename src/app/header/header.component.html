@@ -1,42 +1,45 @@
+<div class="empty">
+
+</div>
 
 <div class="body">
-  <div class="Logo" *ngIf="!isAuth" >
-    <img src="../../assets/image/2DO.png" alt="Logo 2DO"> 
+  <div class="Logo">
+    <img class="pointer" src="../../assets/image/2DO.png"  routerLink="/home" alt="Logo 2DO"> 
   </div>
-  <div class="Logo2" *ngIf="isAuth">
-      <img src="../../assets/image/2DO.png" alt="Logo 2DO"> 
-    </div>
-    <div class="toggle" >
-        <span></span>
-        <span></span>
-      </div>
-</div>
-
-
-<div class="block">
-    <ul class="navigation-nav" >
-       <h1 class="titre flex">MENU</h1>
-       <div class="flex">
-         <div class="sepa"></div>
+  <div class="block">
+    <div class="navigation-nav" >
+        <div class="new headnew" routerLinkActive="active"  routerLink="/home" *ngIf="!isAuth">
+            <i class="fas fa-home"></i>
+            <a>Home</a>
+       </div>
+        <div class="new headnew" routerLinkActive="active"  routerLink="/sign-up" *ngIf="!isAuth">
+            <i class="fas fa-sign-in-alt "></i>
+            <a>Créer un compte</a>
         </div>
-         <li class="new navigations" routerLinkActive="active" *ngIf="!isAuth">
-              <a class="headnew" href="sign-up">Créer un compte</a>
-        </li>
-        <li  class="new navigations" routerLinkActive="active" *ngIf="!isAuth">
-              <a class="headnew" href="sign-in">Connexion</a>
-        </li>
-        <li class="new navigations" routerLinkActive="active" *ngIf="isAuth">
-          <a class="headnew" routerLink="accueil">Accueil</a>
-        </li>
-          <li class="new navigations" routerLinkActive="active" *ngIf="isAuth">
-              <a  class="headnew" routerLink="/new-todo">Nouvelle tâche</a>
-            </li>
-          
-            <li class="deco">
-                <a class="navigation Déconnexion"
+        <div  class="new headnew" routerLinkActive="active"  routerLink="/sign-in" *ngIf="!isAuth">
+            <i class="fas fa-user "></i>
+            <a>Connexion</a>
+        </div>
+        <div class="new headnew" routerLinkActive="active" routerLink="/accueil" *ngIf="isAuth">
+          <i class="fas fa-home"></i>
+          <a>Accueil</a>
+        </div>
+          <div class="new headnew" routerLinkActive="active" routerLink="/new-todo" *ngIf="isAuth">
+              <i class="fas fa-plus-square"></i>
+              <a>Nouvelle tâche</a>
+          </div>
+            <div class="deco">
+                <i class="fas fa-power-off navigation Déconnexion"
                    (click)="onSignOut()"
                    style="cursor:pointer"
-                   *ngIf="isAuth">Déconnexion</a>
-            </li>
-      </ul>
+                   *ngIf="isAuth"></i>
+            </div>
+          </div>
 </div>
+<div class="toggle" >
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+

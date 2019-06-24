@@ -16,16 +16,24 @@
 }
 
 .back{
-    height: 550px;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
     background-image: url(../../../assets/image/DariuszSankowski.jpg);
     background-repeat: no-repeat;
-    -webkit-background-size: cover; 
-    background-size: cover; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    background-size: cover;
+    opacity: 100%;
+    animation: fondue 1s linear;
 }
+.content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn{
     background-color: #026aa7;
 }
@@ -81,6 +89,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 80%;
 }
 h2{
     font-size: 2em;

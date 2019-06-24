@@ -13,17 +13,24 @@
     background-color: whitesmoke;
 }
 
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 .back{
-    font-family: 'Oswald', sans-serif;
-    height: 550px;
-    background-image: url(../../../../assets/image/starupstockphotos.jpg);
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-image: url(../../../../assets/image/notebook.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover; 
     background-size: cover; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    opacity: 100%;
+    animation: fondue 1s linear;
 }
 .width{
     width: 65%;

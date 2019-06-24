@@ -1,12 +1,20 @@
 .back{
     background-image: url(../../assets/image/DariuszSankowski.jpg);
     background-repeat: no-repeat;
-    -webkit-background-size: cover; 
-    background-size: cover; 
-    height: 500px;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    opacity: 100%;
+    animation: fondue 1s linear;
+}
+
+.backTitle{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 60vh;
 }
 .blue{
     height: 300px;
@@ -29,36 +37,60 @@
     height:600px;
 }
 .color{
+    text-shadow: 1px 1px black;
+    padding: 5%;
+    border-radius: 50px 50px 0 0;
     font-family: 'Oswald', sans-serif;
     background-color: #026aa7;
-    height: 500px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px -19px 31px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -19px 31px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px -19px 31px -5px rgba(0,0,0,0.75);
+}
+.colorRadius{
+    text-shadow: 1px 1px black;
+    padding: 5%;
+    border-radius: 0px 0px 50px 50px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #026aa7;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 .p{
-    margin-bottom: 5%;
     font-size: 1.4em;
     width: 50%;
-    color: rgb(255, 255, 255);
     text-align: center;
 }
-
+.colorTrans{
+    text-shadow: 1px 1px black;
+    padding: 5%;
+    color: #026aa7;
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .titre{
     margin-bottom: 2%;
-
     text-align: center;
-    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 .tittle{
-
     font-family: 'Oswald', sans-serif;
-    font-size: 6em;
+    font-size: 4em;
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: bold;
+    text-shadow: 2px 3px black;
 }
 .color2{
     

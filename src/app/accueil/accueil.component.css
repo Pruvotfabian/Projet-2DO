@@ -1,7 +1,14 @@
 .back{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
     background-image: url(../../assets/image/starupstockphotos.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover; 
-    background-size: cover; 
+    background-size: cover;
+    opacity: 100%;
+    animation: fondue 1s linear;
 
 }

@@ -1,5 +1,6 @@
 .block{
     width: 100%;
+    min-height: 100vh;
     height: auto;
     display: flex;
     justify-content: center;
@@ -37,7 +38,7 @@ h2{
     }
 }
 .img{
-    width: 50%;
+    font-size: 2em;
 }
 .float{
     position: absolute;
@@ -95,6 +96,7 @@ h2{
     text-align: center;
     margin: 5%;
     font-weight: bolder;
+    text-shadow: 2px 1px 0px black;
 }
 .destroy{
     font-family: 'Oswald', sans-serif;

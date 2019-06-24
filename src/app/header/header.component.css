@@ -1,8 +1,11 @@
 
 .navigation-nav{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.4em;
-    list-style-type: none;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2em;
     padding: 0;
 }
 a{
@@ -20,33 +23,39 @@ a{
 }
 
 .headnew{
-    width: 100%;
     color: whitesmoke;
 }
 .headnew:hover{
+    background-color: whitesmoke;
     color: #222426;
-    transition: 0.5s;
+    animation: underline 0.5s;
 }
+@keyframes underline {
+    0%{
+        text-decoration: underline;
+    }
+    100%{
+        text-decoration: underline;
+    }
+}
+
 .navigation a:hover{
     color: whitesmoke;
     background:  #026aa7;
     border-radius: 10px 10px 10px 10px;
     transition: 0.5s;
+}
 
-}
-.navigations:hover{
-    opacity: 0.9;
-    transition: 0.5s;
-}
 .Déconnexion{
-    height: 25px;
-    margin: 10px;
+    height: 50px;
+    width: 50px;
     display: flex;
+    justify-content: center;
     align-items: center;
     color: whitesmoke;
     background: rgb(253, 41, 41);
     border: 2px solid transparent;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 50px;
     transition: 0.5s;
 }
 .Déconnexion:hover{
@@ -73,45 +82,37 @@ a{
 }
 
 .new{
-    height: 40px;
-    margin: 10px;
+    border-radius: 5px;
+    padding: 2%;
     display: flex;
     align-items: center;
-    align-items: center;;
-    border: 2px solid transparent;
-    border-radius: 25px 25px 25px 25px;
-    transition: 0.5s;
+    cursor: pointer;
 } 
-.new:hover{
-    background: #fff;
-    transition: 0.5s;
-}
 .flex{
     display: flex;
     justify-content: center;
 }
-.sepa{
-    border: 2px solid #fff;
-    width: 75%;
-}
 .block{
     z-index: 5;
     height: 100%;
-    width: 30%;
-    position: fixed;
+    width: 100%;
+    position: absolute;
     background: #222426;
-    left: -500px;
+    left: -1500px;
     top: 0;
-    transition:0.6s;
+    transition:0.9s;
+    -webkit-box-shadow: 9px 1px 11px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 1px 11px 2px rgba(0,0,0,0.75);
+    box-shadow: 9px 1px 11px 2px rgba(0,0,0,0.75)
 }
 .titre{
     color: #fff;
-    margin: 10%;
+    margin: 7%;
 }
 
 
 .block.active{
-    position: fixed;
+    border-radius: 0 0px 50px 0;
     left: 0px;
     transition:0.6s;
 }
@@ -120,19 +121,37 @@ a{
 .body{
     font-family: 'Oswald', sans-serif;
     z-index: 4;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #026aa7;
-    padding: 1%;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    height: 130px;
+    border-radius: 0 0 50px 0px;
+    -webkit-box-shadow: 0px 10px 23px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 23px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 23px 3px rgba(0,0,0,0.75);
+    animation: down 1s;
+}
+@keyframes down {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+.empty{
+    height: 130px;
+    width: 100%;
 }
 .toggle{
-    z-index: 1;
+    z-index: 10;
     font-family: 'Oswald', sans-serif;
     position: fixed;
     width: 80px;
     height: 80px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     transition: 0.5s;
     background:rgba(204, 204, 204, 0.644);
@@ -191,21 +210,19 @@ a{
 .toggle.active:before{
     width: 100%;
     height: 100%;
-    border-radius: 5px 5px 5px 5px;
 }
 .Logo{
-    width: 100%;
     display: flex;
-    justify-content: center;
-
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding-left: 5%;
+}
+.pointer{
+    cursor: pointer;
 }
 
-.Logo2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
 
-}
 .containe{
     display: flex;
     justify-content: flex-end;
@@ -218,10 +235,28 @@ a{
     a{
         font-size: 1em;
     }
+
 }
-@media screen and
+@media screen and (max-width: 900px){
+    .body{
+        width: 70%;
+    }
+    .block{
+        height: 230px;
+    }
+    .navigation-nav{
+        align-items: initial;
+        flex-direction: column;
+
+    }
+    .deco{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* @media screen and
 (max-width: 414px){
     .block{
         width: 70%;
     }
-}
+} */

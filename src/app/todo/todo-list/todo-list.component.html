@@ -5,7 +5,7 @@
           <div  class="flex" *ngFor="let ToDo of toDo; let i = index">
             <h3 class="H3">{{ ToDo.title }}</h3>
               <button class="float" (click)="onDeleteToDo(ToDo)" >
-             <img class="img" src="../../../assets/image/trash.png" alt="">
+                  <i class="far fa-trash-alt img"></i>
               </button>
           </div>
           <div class="destroy" *ngIf="toDodestroy"> Tâche supprimmé ! </div>

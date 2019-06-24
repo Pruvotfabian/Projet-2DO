@@ -59,6 +59,7 @@ export class AuthService {
     return this.afAuth.auth.currentUser.sendEmailVerification()
     .then(() => {
       this.router.navigate(['verification-email']);
+      
     })
   }
   ForgotPassword(passwordResetEmail) {
